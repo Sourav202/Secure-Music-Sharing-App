@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="playlist">
+            <h3>Playlist:</h3>
+                <div id="playlistArea"></div>
+            </div>
+        <div class="inputArea">
+            Enter Song Title: <input type="text" name="city" id="songTitleTextField" />
+            <button id="submit_button" style="margin-bottom: 50px;">Submit</button>
+            <button id="adminButton" class="right-align" onclick="window.location.href='/registeredUsers'">Admin Page</button>
+            <button id="loginButton" class="right-align" onclick="window.location.href='/userSignUp'">Login Page</button>
+
+            <div id="songs_div"></div>
+        </div>
+
+        <div class="resultsArea">
+            <div id="searchResults"></div>
+        </div>
+    </div>
+
+    <script src="js/search.js"></script>
+    <script src="js/playlist.js"></script>
+    <script src="js/buttonListeners.js"></script>
+    <script src="js/table.js"></script>
+    <script src="js/storage.js"></script>
+</body>
+
+</html>

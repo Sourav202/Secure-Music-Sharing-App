@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+   <h1>{{title}}</h1>
+      <div> 
+      {{#each userEntries}} 
+         <p>userID: {{this.userid}} | Password: {{this.password}}</a></p> 
+      {{/each}} 
+      </div>
+          <button onclick="window.location.href='/mytunes'">Back to Home</button>
+   </body>
+</html>
